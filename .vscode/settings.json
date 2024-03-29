@@ -1,0 +1,9 @@
+{
+	"idf.adapterTargetName": "esp8266",
+	"files.associations": {
+		"array": "c",
+		"string": "c",
+		"string_view": "c",
+		"span": "c"
+	}
+}

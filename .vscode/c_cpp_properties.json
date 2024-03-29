@@ -1,0 +1,41 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        },
+        {
+            "name": "ESP8266",
+            "includePath": [
+                "/home/paco/proyectos/esp8266/prueba_gpio/**",
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c99",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm",
+            "compilerArgs": [],
+            "compilerPathInCppPropertiesJson": "/usr/bin/clang",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "/home/paco/proyectos/esp8266/prueba_gpio/**",
+                    "/home/paco/esp/ESP8266_RTOS_SDK/components/freertos/include/",
+                    "/home/paco/esp/ESP8266_RTOS_SDK/components/freertos/include/freertos/",
+                    "/home/paco/esp/ESP8266_RTOS_SDK/components/esp8266/include/",
+                    "/home/paco/esp/ESP8266_RTOS_SDK/components/esp_common/include/",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}
