@@ -38,7 +38,7 @@ esp_err_t AT24_WriteBytes(uint8_t device, uint16_t address, uint8_t *data, uint8
 	i2c_master_stop(cmd);
 	ret = i2c_master_cmd_begin(I2C_OLED_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
 	i2c_cmd_link_delete(cmd);
-	vTaskDelay(6/portTICK_RATE_MS);
+	vTaskDelay(10/portTICK_RATE_MS);
 	return ret;
 }
 
@@ -54,7 +54,7 @@ esp_err_t AT24_WriteByte(uint8_t device, uint16_t address, uint8_t data)
 	i2c_master_stop(cmd);
 	ret = i2c_master_cmd_begin(I2C_OLED_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
 	i2c_cmd_link_delete(cmd);
-	vTaskDelay(6/portTICK_RATE_MS);
+	vTaskDelay(10/portTICK_RATE_MS);
 	return ret;
 }
 

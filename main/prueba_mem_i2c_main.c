@@ -47,14 +47,12 @@ void app_main()
 	printf("Se van a guardar 64 bits en la memoria.\n");
 
 	AT24_WriteBytes(device, 0, datos, 32);
-	vTaskDelay(100/portTICK_RATE_MS);
 	AT24_WriteBytes(device, 32, datos+32, 32);
-	vTaskDelay(100/portTICK_RATE_MS);
+
 
 	/*for(i= 0; i < 8; i++)
 	{
 		AT24_WriteByte(device, i, i);
-		vTaskDelay(100/portTICK_RATE_MS);
 	}*/
 
 	while(1)
