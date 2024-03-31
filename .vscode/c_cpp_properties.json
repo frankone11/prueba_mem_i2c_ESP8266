@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/clang",
+            "compilerPath": "/usr/bin/arm-none-eabi-g++",
             "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "linux-gcc-x64"
@@ -14,7 +14,7 @@
         {
             "name": "ESP8266",
             "includePath": [
-                "/home/paco/proyectos/esp8266/prueba_gpio/**",
+                "/home/paco/proyectos/esp8266/prueba_gpio/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
